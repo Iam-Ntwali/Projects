@@ -65,7 +65,42 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  border: 2px solid #3ee21d;
+  /* border: 2px solid #3ee21d; */
+}
+
+/* === media queries === */
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+    /* border: 2px solid #ccc; */
+  }
+}
+
+@media (max-width: 768px) {
+  main .greeting-section {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 60px;
+    /* border: 2px solid #eb8888; */
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding: 0 80px;
+    /* border: 2px solid #2421e2; */
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 0 100px;
+    /* border: 2px solid #e0f806; */
+  }
 }
 
 /* ========== */
@@ -175,11 +210,11 @@ main .greeting-section .left-side .weather-group {
   display: flex;
 }
 
-/* main .greeting-section.left-side .weather-group input[type="radio"] {
+main .greeting-section .left-side .weather-group input[type="radio"] {
   position: absolute;
   visibility: hidden;
   display: none;
-} */
+}
 
 main .greeting-section .left-side .weather-group input[type="radio"]:checked+label {
   color: #fff;
@@ -454,41 +489,67 @@ main .products-section .products-area .product-item .product-details .product-pr
   margin-top: 8px;
 }
 
-/* === media queries === */
-@media (min-width: 768px) {
-  .container {
-    padding: 0 40px;
-    border: 2px solid #ccc;
-  }
-
-  /* main .greeting-section {
-    flex-direction: column;
-  } */
+/* === faqs section ===*/
+main .faqs-section {
+  margin-bottom: 80px;
 }
 
-@media (max-width: 768px) {
-  main .greeting-section {
-    flex-direction: column;
-  }
+main .faqs-section h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 39px;
+  margin-bottom: 40px;
 }
 
-@media (min-width: 1024px) {
-  .container {
-    padding: 0 60px;
-    border: 2px solid #eb8888;
-  }
+main .faqs-section details {
+  border-bottom: 1px solid #4e4e4e;
 }
 
-@media (min-width: 1280px) {
-  .container {
-    padding: 0 80px;
-    border: 2px solid #2421e2;
-  }
+main .faqs-section details[open] {
+  padding-bottom: 20px;
 }
 
-@media (min-width: 1440px) {
-  .container {
-    padding: 0 100px;
-    border: 2px solid #e0f806;
-  }
+main .faqs-section details[open] summary::after {
+  content: url("data:image/svg+xml,<svg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 8L7 2L13 8' stroke='white' stroke-width='2'/></svg>");
+}
+
+main .faqs-section details summary::after {
+  content: url("data:image/svg+xml,<svg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M13 1L7 7L1 1' stroke='white' stroke-width='2'/></svg>");
+  margin-left: 10px;
+}
+
+main .faqs-section details summary {
+  padding: 20px 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  cursor: pointer;
+  list-style: none;
+}
+
+main .faqs-section details summary::-webkit-details-marker,
+main .faqs-section details summary::marker {
+  display: none;
+}
+
+main .faqs-section details p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+footer {
+  padding: 21px;
+  color: var(--gray-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  text-align: center;
+  width: 100%;
+  background-color: var(--light-background-color);
 }
