@@ -1,8 +1,14 @@
 console.log(document);
 
-const Menu_Bar = document.querySelector('#open-nav-menu');
+const OpenMenu_BarBtn = document.querySelector('#open-nav-menu');
+
+const closeMenu_BarBtn = document.querySelector('#close-nav-menu');
 const NavigationMenu = document.querySelector('header nav .wrapper');
 
-Menu_Bar.addEventListener('click', function () {
+OpenMenu_BarBtn.addEventListener('click', function () {
   NavigationMenu.classList.add('nav-open');
+});
+
+closeMenu_BarBtn.addEventListener('click', function () {
+  NavigationMenu.classList.remove('nav-open');
 });
