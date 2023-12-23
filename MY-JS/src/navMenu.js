@@ -1,5 +1,3 @@
-console.log(document);
-
 const OpenMenu_BarBtn = document.querySelector('#open-nav-menu');
 
 const closeMenu_BarBtn = document.querySelector('#close-nav-menu');
