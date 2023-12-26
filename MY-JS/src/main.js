@@ -1,1 +1,2 @@
-console.log(document);
+console.log('Main JS Here');
+
