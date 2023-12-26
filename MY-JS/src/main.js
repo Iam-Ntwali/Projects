@@ -6,7 +6,7 @@ const greetingTextEl = document.querySelector('#greeting');
 const weatherEl = document.querySelector('p#weather');
 
 // variables
-const greetingText = 'Good Morning';
+const greetingText = 'Good Morning!';
 const weatherCondition = 'Sunny';
 const userLocation = 'New York';
 let temperature = 22.86;
