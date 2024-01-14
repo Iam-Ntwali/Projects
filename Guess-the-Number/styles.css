@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background: url(/cool-background.png);
+    background: url(./cool-background.png);
     font-family: 'Odibee Sans', cursive;
     color: #88C8FF;
     height: 99vh;
@@ -24,7 +24,7 @@ h1 {
 
 input {
     border: none;
-    outline:none;
+    outline: none;
     background-color: rgba(255, 255, 255, 0.18);
 }
 
@@ -54,7 +54,8 @@ button:hover {
     width: 100%;
 }
 
-.top, .bottom {
+.top,
+.bottom {
     text-align: center;
     background: rgba(14, 11, 17, 0.3);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 1);
@@ -97,7 +98,7 @@ button:hover {
 }
 
 .two {
-    padding:1rem 1rem .5rem;
+    padding: 1rem 1rem .5rem;
 }
 
 .secretNumber {
@@ -129,7 +130,8 @@ button:hover {
     border-radius: .5rem;
 }
 
-.score, .highscore {
+.score,
+.highscore {
     font-size: 2rem;
 }
 
@@ -152,14 +154,15 @@ button:hover {
     background: rgba(31, 38, 135, 0.3);
     backdrop-filter: blur(10px);
     z-index: 500;
-    transition: all 0.3s ease-in-out; 
+    transition: all 0.3s ease-in-out;
 }
+
 .instructions {
     font-family: Montserrat;
     text-align: center;
     font-size: 1.5rem;
     background: rgba(14, 11, 17, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135,1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 1);
     backdrop-filter: blur(7.5px);
     -webkit-backdrop-filter: blur(7.5px);
     border-radius: 10px;
@@ -190,9 +193,7 @@ button:hover {
     color: crimson;
 }
 
-.title__instr p {
-    
-}
+.title__instr p {}
 
 .close-btn {
     position: absolute;
