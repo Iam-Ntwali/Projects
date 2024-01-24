@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background: url(./img/clouds-weather.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: #6b7280;
+}
+
+img {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: #0f172a;
+  padding: 1rem;
+  color: #cfcfcf;
+  gap: 1rem;
+  justify-content: center;
+}
+
+header img {
+  width: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: .5rem 1rem;
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: 1px solid #0f172a;
+  background-color: #0f172a;
+  border-radius: 5px;
+  color: crimson;
+  transition: all 0.5s ease;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.container {
+  position: relative;
+  max-width: 1240px;
+  width: 40%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #0f172a;
+  color: #cfcfcf;
+  border-radius: 10px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: crimson;
+}
+
+.search__bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: .3rem;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #1e293b;
+}
+
+.search__bar div {
+  font-size: 1.2rem;
+}
+
+.search__bar input {
+  width: 70%;
+  padding: .6rem .3rem;
+  font-size: 1rem;
+  color: #a1a1aa;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* === INFO === */
+
+.info {
+  color: #a1a1aa;
+}
+
+.city {
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.country {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.current__time {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.condition {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+  color: #a1a1aa;
+  gap: 2rem;
+}
+
+.condition__icon {
+  display: inline-block;
+  width: 9rem;
+}
+
+.condition__text {
+  background-color: #1e293b;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+  font-weight: 700;
+  width: 80%;
+  font-size: 12px;
+}
+
+.temperature {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.temp p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* ----------- */
+.more__info {
+  border-top: 3px solid #1e293b;
+  padding: 10px;
+}
+
+.credits {
+  background-color: #0f172a;
+  text-align: center;
+  color: crimson;
+
+}
+
+.credits a {
+  text-decoration: none;
+  color: #6b7280;
+  font-weight: 700;
+}
+
+
+
+
+/* -- Media Queries */
+
+
+@media (max-width: 935px) {
+  .container {
+    /* border: 2px solid rgb(255, 162, 0); */
+
+    max-width: 935px;
+    width: 50%;
+  }
+
+}
+
+@media (max-width: 915px) {
+  .container {
+    /* border: 2px solid rgb(255, 162, 0); */
+    width: 60%;
+    padding: 1rem;
+  }
+
+}
+
+@media (max-width: 815px) {
+  .container {
+    /* border: 2px solid rgb(81, 255, 0); */
+    width: 70%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 615px) {
+  .container {
+    /* border: 2px solid rgb(4, 0, 255); */
+    width: 80%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 515px) {
+  .container {
+    /* border: 2px solid rgb(0, 234, 255); */
+    width: 90%;
+    padding: 1rem;
+  }
+}
