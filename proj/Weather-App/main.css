@@ -5,6 +5,10 @@
   font-family: 'Raleway', sans-serif;
 }
 
+html {
+  font-size: 12px;
+}
+
 body {
   background: url(./img/clouds-weather.gif);
   background-repeat: no-repeat;
@@ -55,7 +59,7 @@ header img {
   position: relative;
   max-width: 1240px;
   width: 40%;
-  margin: 2rem auto;
+  margin: 1rem auto;
   padding: 2rem;
   background-color: #0f172a;
   color: #cfcfcf;
