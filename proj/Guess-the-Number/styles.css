@@ -49,7 +49,7 @@ button:hover {
 
 .container {
     margin: 2rem auto;
-    height: 80vh;
+    /* height: 80vh; */
     max-width: 80rem;
     width: 100%;
 }
@@ -78,13 +78,12 @@ button:hover {
 .bottom {
     margin-top: 2rem;
     padding: 2rem 0;
-    font-size: 3rem;
-    height: auto;
+    font-size: 2rem;
 }
 
-.bold {
+/* .bold {
     font-size: 1.7rem;
-}
+} */
 
 .one input {
     padding: .5rem;
@@ -107,7 +106,7 @@ button:hover {
 }
 
 .message {
-    font-size: 2.5rem;
+    font-size: 2rem;
     height: 9rem;
 }
 
@@ -137,6 +136,7 @@ button:hover {
 
 .reset-btn {
     width: 15rem;
+    font-size: 2rem;
     border: 2px solid crimson;
     color: crimson;
 }

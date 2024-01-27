@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Shortly URL shortening</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/media-queries.css">
+
+  <!-- typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/69b0aced3e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- ========== Header ========== -->
+  <header class="header container">
+    <!-- ==== logo ==== -->
+    <div class="logo">
+      <a href="#">
+        <img src="./images/logo.svg" alt="shortly logo">
+      </a>
+    </div>
+    <!-- ==== nav menu ==== -->
+    <nav class="nav__menu">
+      <div class="nav__links">
+        <a href="" class="nav__link">
+          Features
+        </a>
+        <a href="" class="nav__link">
+          Pricing
+        </a>
+        <a href="" class="nav__link">
+          Resources
+        </a>
+      </div>
+      <div class="nav__btn">
+        <a href="" class="nav__link btn login">
+          Login
+        </a>
+        <a href="" class="nav__link btn signUp">
+          Sign Up
+        </a>
+      </div>
+    </nav>
+    <!-- ==== Menu Bar Icon ==== -->
+    <div class="nav__bar">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+  </header>
+  <!-- ========== End Header ========== -->
+  <!-- ========== Mobile NavBar ========== -->
+  <nav class="mobile__navbar hidden">
+    <a href="" class="mobile-nav__link">
+      Features
+    </a>
+    <a href="" class="mobile-nav__link">
+      Pricing
+    </a>
+    <a href="" class="mobile-nav__link">
+      Resources
+    </a>
+    <hr class="mobile__line">
+    <a href="" class="mobile-nav__link login">
+      Login
+    </a>
+    <a href="" class="mobile-nav__link btn signUp">
+      Sign Up
+    </a>
+  </nav>
+  <!-- ========== End  NavBar ========== -->
+  <!-- ========== Main Section ========== -->
+  <main>
+    <!-- ========= Hero Section ========= -->
+    <section id="hero">
+      <div class="hero__content container">
+        <div class="hero__img">
+          <img src="./images/illustration-working.svg" alt="hero image">
+        </div>
+        <div class="hero__text">
+          <h1 class="hero__title">
+            More than just<br>shorter links
+          </h1>
+          <p class="hero__description">
+            Build your brand’s recognition and get detailed insights links are performing.
+          </p>
+          <a href="#" class="hero__btn btn">
+            Get Started
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ========= End Hero ========= -->
+
+    <!-- ========= Features Section ========= -->
+    <section id="featuring">
+      <div class="container featuring">
+        <div class="links__container">
+          <form class="inputs__bar">
+            <div class="links__input">
+              <input type="text" class="links" placeholder="Shorten a link here...">
+              <p class="hidden warn">Please add a link</p>
+            </div>
+            <button type="submit" class="links__btn btn">
+              Shorten it!
+            </button>
+          </form>
+
+          <div class="shorten__link">
+            <!-- <h4>https://www.frontendmentor.io</h4>
+            <p>https"//rel.ink/k4lKyk</p>
+            <button class="copy btn">Copy</button> -->
+          </div>
+        </div>
+
+        <h2 class="featuring__title">
+          Advanced Statistics
+        </h2>
+
+        <p class="featuring__description">
+          Track how your links are performing across the web with <br>our
+          advanced statistics dashboard.
+        </p>
+
+        <div class="featuring__cards">
+          <div class="cardOne card">
+            <div class="card__img">
+              <img src="./images/icon-brand-recognition.svg" alt="icon">
+            </div>
+            <h1 class="card__title">
+              Brand Recognition
+            </h1>
+            <p class="card__description">
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your content.
+            </p>
+          </div>
+          <div class="cardTwo card">
+            <div class="card__img">
+              <img src="./images/icon-detailed-records.svg" alt="icon">
+            </div>
+            <h1 class="card__title">
+              Detailed Records
+            </h1>
+            <p class="card__description">
+              Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions.
+            </p>
+          </div>
+          <div class="cardThree card">
+            <div class="card__img">
+              <img src="./images/icon-fully-customizable.svg" alt="icon">
+            </div>
+            <h1 class="card__title">
+              Fully Customizable
+            </h1>
+            <p class="card__description">
+              Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========= End Features ========= -->
+
+    <!-- ========= CTA Section ========= -->
+    <section class="CallToAction">
+      <h1>
+        Boost your links today
+      </h1>
+      <a href="#" class="btn">
+        Get Started
+      </a>
+    </section>
+    <!-- ========= End CTA ========= -->
+  </main>
+  <!-- ========== End Main ========== -->
+
+  <!-- ========== Footer ========== -->
+  <footer>
+    <div class="footer container">
+      <div class="footer__logo">
+        <img src="./images/logo.svg" alt="">
+
+      </div>
+      <div class="features">
+        <h1>Features</h1>
+        <ul>
+          <li>Link Shortening</li>
+          <li>Branded Links</li>
+          <li>Analytics</li>
+        </ul>
+      </div>
+      <div class="resources">
+        <h1>Resources</h1>
+        <ul>
+          <li>Blog</li>
+          <li>Developers</li>
+          <li>Support</li>
+        </ul>
+      </div>
+      <div class="company">
+        <h1>Company</h1>
+        <ul>
+          <li>About</li>
+          <li>Our Team</li>
+          <li>Careers</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="social__links">
+        <img src="./images/icon-facebook.svg" alt="">
+        <img src="./images/icon-twitter.svg" alt="">
+        <img src="./images/icon-pinterest.svg" alt="">
+        <img src="./images/icon-instagram.svg" alt="">
+      </div>
+    </div>
+  </footer>
+  <!-- ========== End footer ========== -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    <div class="br"></div>
+    Coded by <a href="#">Ntwali P 👨🏾‍💻</a>.
+  </div>
+
+  <!-- Javascript -->
+  <script src="./src/app.js"></script>
+  <script src="./src/nav-menu.js"></script>
+</body>
+
+</html>
