@@ -11,16 +11,19 @@ body {
         radial-gradient(at 47% 33%, hsl(176.10, 69%, 22%) 0, transparent 59%),
         radial-gradient(at 82% 65%, hsl(240.00, 4%, 16%) 0, transparent 55%);
     background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .container {
     max-width: 300px;
-    margin: 5rem auto;
+    margin: 3rem auto;
 }
 
 .title {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
