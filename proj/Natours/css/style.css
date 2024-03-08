@@ -85,39 +85,12 @@ body {
   animation: rightIn 1.5s ease-out;
 }
 
-@keyframes leftIn {
-  0% {
-    opacity: 0;
-    transform: translate(-100px);
-  }
-
-  70% {
-    transform: translateX(50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes rightIn {
-  0% {
-    opacity: 0;
-    transform: translate(100px);
-  }
-
-  70% {
-    transform: translateX(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 /* button style */
+.btn-animated {
+  animation: bottomIn 1.5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
 .btn {
   position: relative;
 }
@@ -158,7 +131,7 @@ body {
 }
 
 .btn:hover::after {
-  transform: scale(1.2);
+  transform: scaleX(1.2) scaleY(1.4);
   opacity: 0;
 }
 
@@ -168,5 +141,50 @@ body {
 }
 
 .btn-white::after {
-  background-color: red;
+  background-color: #fff;
+}
+
+/* Animations */
+@keyframes leftIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  70% {
+    transform: translateX(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes rightIn {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  70% {
+    transform: translateX(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes bottomIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
