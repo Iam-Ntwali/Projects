@@ -27,10 +27,15 @@ input {
   font-weight: bold;
 }
 
-.column {
-  float: left;
+.row {
+  border: 1px solid slateblue;
+}
 
-  padding: 10px;
+.column {
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -43,8 +48,11 @@ input {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+
+  max-width: 250px;
 }
 
 .thumbnail {
   border-radius: 10px;
+
 }
