@@ -1,6 +1,6 @@
-const APILINK = 'https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&api_key=4fd223a643800f435e6ed8a4fd71dc1e&page=1';
-const IMGPATH = 'hhtps://image.tmdb/t/p/w1280';
-const SEARCHAPI = 'https://api.themoviedb.org/3/search/movie&api_key=4fd223a643800f435e6ed8a4fd71dc1e&query=';
+const APILINK = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=4fd223a643800f435e6ed8a4fd71dc1e';
+const IMG_PATH = 'https://image.tmdb/t/p/w1280';
+const SEARCHAPI = 'https://api.themoviedb.org/3/search/movie?&api_key=4fd223a643800f435e6ed8a4fd71dc1e&query=';
 
 // HTML Elements
 const display = document.querySelector('.column');
@@ -15,11 +15,13 @@ function getMovie(url) {
       console.log(data.results);
       data.results.forEach(el => {
         const card = document.createElement('div');
+        card.classList.add('card');
         const image = document.createElement('img');
+        image.classList.add('thumbnail');
         const title = document.createElement('h3');
 
         title.textContent = el.title;
-        image.src = IMGPATH + el.poster_path;
+        image.src = IMG_PATH + el.poster_path;
 
         card.appendChild(image);
         card.appendChild(title);
@@ -37,7 +39,8 @@ form.addEventListener('submit', (e) => {
   console.log(query);
   if (query) {
     getMovie(SEARCHAPI + query);
-    query = '';
+    query.value = '';
+
   } else {
     alert('Please enter a search query');
   }
