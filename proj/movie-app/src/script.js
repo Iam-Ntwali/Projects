@@ -1,5 +1,5 @@
 const APILINK = 'https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=4fd223a643800f435e6ed8a4fd71dc1e';
-const IMG_PATH = 'https://image.tmdb/t/p/w1280';
+const IMG_PATH = 'https://image.themoviedb/t/p/w500';
 const SEARCHAPI = 'https://api.themoviedb.org/3/search/movie?&api_key=4fd223a643800f435e6ed8a4fd71dc1e&query=';
 
 // HTML Elements
@@ -20,7 +20,7 @@ function getMovie(url) {
         image.classList.add('thumbnail');
         const title = document.createElement('h3');
 
-        title.textContent = el.title;
+        title.textContent = `${el.title}`;
         image.src = IMG_PATH + el.poster_path;
 
         card.appendChild(image);
