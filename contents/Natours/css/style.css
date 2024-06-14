@@ -14,6 +14,7 @@ Dark green: #28b485
   box-sizing: border-box;
 }
 
+/* --- General styling --- */
 body {
   color: #777;
   font-family: 'Lato', sans-serif;
@@ -23,6 +24,21 @@ body {
   padding: 30px;
 }
 
+/*
+  Reusable components
+*/
+/* Animated button class */
+/* button style */
+.btn-animated {
+  animation: bottomIn 1.5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+
+
+/*
+  Header styling
+*/
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom,
@@ -36,6 +52,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
+/* Logo container */
 .logo-box {
   position: absolute;
   top: 40px;
@@ -44,10 +61,12 @@ body {
   user-select: none;
 }
 
+/* Logo img */
 .logo {
   height: 35px;
 }
 
+/* Text {Description} */
 .header-description {
   position: absolute;
   top: 40%;
@@ -57,6 +76,7 @@ body {
   text-align: center;
 }
 
+/* Subtitles Text */
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -69,6 +89,7 @@ body {
   display: block;
 }
 
+/* Subtitle main */
 .heading-primary-main {
   font-size: 60px;
   font-weight: 400;
@@ -77,18 +98,13 @@ body {
   animation: leftIn 1.5s ease-out;
 }
 
+/* Subtitle second */
 .heading-primary-sub {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 18.9px;
 
   animation: rightIn 1.5s ease-out;
-}
-
-/* button style */
-.btn-animated {
-  animation: bottomIn 1.5s ease-out .75s;
-  animation-fill-mode: backwards;
 }
 
 .btn {
@@ -144,7 +160,9 @@ body {
   background-color: #fff;
 }
 
-/* Animations */
+/*
+  Keyframes
+*/
 @keyframes leftIn {
   0% {
     opacity: 0;
