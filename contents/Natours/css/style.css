@@ -32,86 +32,7 @@ body {
 /*
   Reusable components
 */
-/* Animated button class */
-/* button style */
-.btn-animated {
-  animation: bottomIn 1.5s ease-out .75s;
-  animation-fill-mode: backwards;
-}
-
-
-
-/*
-  Header styling
-*/
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom,
-      rgba(126, 213, 111, 0.8),
-      rgba(40, 180, 133, 0.8)),
-    url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  position: relative;
-
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
-
-/* Logo container */
-.logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-
-  user-select: none;
-}
-
-/* Logo img */
-.logo {
-  height: 3.5rem;
-}
-
-/* Text {Description} */
-.header-description {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  text-align: center;
-}
-
-/* Subtitles Text */
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-
-  margin-bottom: 6rem;
-}
-
-.heading-primary-main,
-.heading-primary-sub {
-  display: block;
-}
-
-/* Subtitle main */
-.heading-primary-main {
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-
-  animation: leftIn 1.5s ease-out;
-}
-
-/* Subtitle second */
-.heading-primary-sub {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.7rem;
-
-  animation: rightIn 1.5s ease-out;
-}
-
+/* btn */
 .btn {
   position: relative;
 }
@@ -157,14 +78,93 @@ body {
   opacity: 0;
 }
 
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
+
+/* Animated button class */
+.btn--animated {
+  animation: bottomIn 1.5s ease-out .75s;
+  animation-fill-mode: backwards;
+}
+
+/*
+  Header styling
+*/
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom,
+      rgba(126, 213, 111, 0.8),
+      rgba(40, 180, 133, 0.8)),
+    url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+/* Logo container */
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+
+  user-select: none;
+}
+
+/* Logo img */
+.header__logo {
+  height: 3.5rem;
+}
+
+/* Text {Description} */
+.header__description {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+}
+
+/* Subtitles Text */
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  margin-bottom: 6rem;
+}
+
+.heading-primary--main,
+.heading-primary--sub {
+  display: block;
+}
+
+/* Subtitle main */
+.heading-primary--main {
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+
+  animation: leftIn 1.5s ease-out;
+}
+
+/* Subtitle second */
+.heading-primary--sub {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.7rem;
+
+  animation: rightIn 1.5s ease-out;
+}
+
+
 
 /*
   Keyframes
