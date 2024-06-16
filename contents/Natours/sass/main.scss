@@ -1,3 +1,30 @@
+@import "base/base";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/bg-video";
+@import "components/button";
+@import "components/card";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/form";
+@import "components/popup";
+@import "components/story";
+
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+
+@import "pages/home";
+
 /* Variables */
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
@@ -17,7 +44,6 @@ $color-black: #000;
 }
 
 /* --- General styling --- */
-
 html {
   font-size: 62.5%;
 }
@@ -38,7 +64,10 @@ body {
 /* btn */
 .btn {
   position: relative;
-
+  &:hover::after {
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+  }
   &:link,
   &:visited {
     border-radius: 10rem;
@@ -54,6 +83,11 @@ body {
   &:hover {
     transform: translateY(-0.3rem);
     box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+
+    &::after {
+      transform: scaleX(1.2) scaleY(1.4);
+      opacity: 0;
+    }
   }
 
   &:active {
@@ -75,18 +109,13 @@ body {
     z-index: -1;
   }
 
-  &:hover::after {
-    transform: scaleX(1.2) scaleY(1.4);
-    opacity: 0;
-  }
-
   &--white {
     background-color: $color-white;
     color: $color-grey-dark;
-  }
 
-  &--white::after {
-    background-color: $color-white;
+    &::after {
+      background-color: $color-white;
+    }
   }
 
   /* Animated button class */
