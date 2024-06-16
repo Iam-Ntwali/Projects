@@ -4,6 +4,8 @@ $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
 
 $color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
 
 /* universal resetter */
 *,
@@ -52,12 +54,12 @@ body {
 
 .btn:hover {
   transform: translateY(-0.3rem);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 }
 
 .btn:active {
   transform: translateY(-1px);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
 }
 
 .btn::after {
@@ -80,12 +82,12 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
+  background-color: $color-white;
   color: $color-grey-dark;
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 /* Animated button class */
@@ -138,7 +140,7 @@ body {
 
 /* Subtitles Text */
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
 
   margin-bottom: 6rem;
