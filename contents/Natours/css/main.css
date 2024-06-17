@@ -218,6 +218,35 @@ body {
   transform: translateY(0);
 }
 
+.composition {
+  position: relative;
+}
+.composition__photo {
+  width: 55%;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.2s;
+  outline: 0.5rem solid #55c57a;
+  outline-offset: 0.5rem;
+}
+.composition__photo--p1 {
+  left: 0;
+  top: -3rem;
+}
+.composition__photo--p2 {
+  right: -5%;
+  top: 2rem;
+}
+.composition__photo--p3 {
+  left: 20%;
+  top: 15rem;
+}
+.composition:hover .composition__photo:not(:hover) {
+  transform: scale(0.95);
+}
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
