@@ -1,5 +1,5 @@
 /*
-  Header styling
+  Layout Header
 */
 .header {
   height: 95vh;
@@ -15,7 +15,6 @@
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
-  /* Logo container */
   &__logo-box {
     position: absolute;
     top: 4rem;
@@ -24,12 +23,10 @@
     user-select: none;
   }
 
-  /* Logo img */
   &__logo {
     height: 3.5rem;
   }
 
-  /* Text {Description} */
   &__description {
     position: absolute;
     top: 40%;

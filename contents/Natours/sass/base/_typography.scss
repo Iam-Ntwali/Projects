@@ -1,3 +1,6 @@
+/*
+  Typography
+ */
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
@@ -9,7 +12,6 @@
     display: block;
   }
 
-  /* Subtitle main */
   &--main {
     font-size: 6rem;
     font-weight: 400;
@@ -18,7 +20,6 @@
     animation: leftIn 1.5s ease-out;
   }
 
-  /* Subtitle second */
   &--sub {
     font-size: 2rem;
     font-weight: 700;

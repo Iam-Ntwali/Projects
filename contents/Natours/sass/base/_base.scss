@@ -1,4 +1,6 @@
-/* universal resetter */
+/*
+  universal resetter / Base
+*/
 *,
 *:before,
 *:after {
@@ -7,7 +9,6 @@
   box-sizing: inherit;
 }
 
-/* --- General styling --- */
 html {
   font-size: 62.5%;
 }

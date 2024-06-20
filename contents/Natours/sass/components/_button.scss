@@ -1,7 +1,6 @@
 /*
   Reusable components
 */
-/* btn */
 .btn {
   position: relative;
   &,
@@ -70,7 +69,6 @@
     z-index: -1;
   }
 
-  /* Animated button class */
   &--animated {
     animation: bottomIn 1.5s ease-out 0.75s;
     animation-fill-mode: backwards;
