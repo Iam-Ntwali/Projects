@@ -221,6 +221,34 @@ body {
   transform: translateY(0);
 }
 
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+}
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+.card__price-box {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8rem;
+}
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
+}
+
 /*
   About section components
 */
@@ -368,6 +396,12 @@ body {
 }
 .section-features > * {
   transform: skewY(7deg);
+}
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem;
 }
 
 /*# sourceMappingURL=main.css.map */
