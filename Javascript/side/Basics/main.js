@@ -55,12 +55,25 @@ for (data in students) {
 // console.log(whatDoesUserDo);
 // console.log(whatDoesUserDo.slice(0));
 
-let favActorFirstName = 'Nicolas';
-let favActorLastName = 'Cage';
-let actorFullName = favActorFirstName + ' ' + favActorLastName;
-console.log(actorFullName);
+// let favActorFirstName = 'Nicolas';
+// let favActorLastName = 'Cage';
+// let actorFullName = favActorFirstName + ' ' + favActorLastName;
+// console.log(actorFullName);
 
-let uppercase = actorFullName.toUpperCase();
-console.log(uppercase);
-actorFullName += ' best movie is Firefox';
-console.log(actorFullName);
+// let uppercase = actorFullName.toUpperCase();
+// console.log(uppercase);
+// actorFullName += ' best movie is Firefox';
+// console.log(actorFullName);
+
+// CONVERT TYPES
+let money = 50; // type of money is  a number
+console.log(money, 'is a', typeof money);
+
+money = String(money); // convert a number to a string
+console.log(money, 'is now a', typeof money);
+
+money = parseInt(money); // convert a string to a number
+console.log(money, 'is now a', typeof money, 'again 🙂');
+
+money = Number(money); // convert a string to a number
+console.log('or using the constructor Number()', money, 'is still converted to a', typeof money);
