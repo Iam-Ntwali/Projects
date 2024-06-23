@@ -48,4 +48,19 @@ for (data in students) {
 // console.log(firstFavNum ** 2);
 //
 
-console.log('is 5 === 5 ? ', 5 === 5);
+// let user = 'Ntwali';
+// const occupation = 'Web Developer';
+
+// let whatDoesUserDo = user + ' is a ' + occupation;
+// console.log(whatDoesUserDo);
+// console.log(whatDoesUserDo.slice(0));
+
+let favActorFirstName = 'Nicolas';
+let favActorLastName = 'Cage';
+let actorFullName = favActorFirstName + ' ' + favActorLastName;
+console.log(actorFullName);
+
+let uppercase = actorFullName.toUpperCase();
+console.log(uppercase);
+actorFullName += ' best movie is Firefox';
+console.log(actorFullName);
