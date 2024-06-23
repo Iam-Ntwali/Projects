@@ -46,4 +46,6 @@ for (data in students) {
 // console.log(firstFavNum / secondFavNum);
 // console.log(firstFavNum % secondFavNum);
 // console.log(firstFavNum ** 2);
+//
 
+console.log('is 5 === 5 ? ', 5 === 5);
