@@ -35,3 +35,15 @@ for (data in students) {
     console.log(`student ${Number(data) + 1} is ${students[data]}`);
   }
 }
+
+// challenge
+// let firstFavNum = 24;
+// let secondFavNum = 36;
+
+// console.log(firstFavNum + secondFavNum);
+// console.log(firstFavNum - secondFavNum);
+// console.log(firstFavNum * secondFavNum);
+// console.log(firstFavNum / secondFavNum);
+// console.log(firstFavNum % secondFavNum);
+// console.log(firstFavNum ** 2);
+
