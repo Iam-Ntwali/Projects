@@ -31,15 +31,15 @@ console.log(divide(10, 2));
 
 // callback function
 const adminUsers = ['Ntwali', 'Theo'];
-const normalUsers = ['John', 'Patrick', 'Jane'];
-const loggedInUser = 'Theo';
+const normalUsers = ['John', 'Patrick', 'Jane', 'Ntwali'];
+const loggedInUser = 'Nicole';
 
 const adminAccess = (user, checkRoleFn) => {
   if (adminUsers.includes(user)) {
     usrRole = 'admin';
     checkRoleFn();
     console.log('Welcome to the Dashboard', user);
-  } else if (normalUsers.includes(user)) {
+  } else if (!adminUsers.includes(user) && normalUsers.includes(user)) {
     usrRole = 'user';
     checkRoleFn();
     console.log('You are not an admin');
