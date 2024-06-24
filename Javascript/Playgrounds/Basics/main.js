@@ -186,4 +186,7 @@ const person = {
     state: 'MA'
   }
 };
+person.hobbies.pop();
+person.address.street = 'KK 74 St';
+person.address.city = 'Kigali';
 console.log(person);
