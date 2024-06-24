@@ -173,4 +173,18 @@ console.log(numbers[0]); // accessing item in array using index
 console.log(numbers[numbers.length - 1]); // accessing last item in array
 
 const nestedArray = ["a", "b", ["c", "d", "e", "f"], "g", "h"];
+console.log(nestedArray.sort()); // sort array items
 console.log(nestedArray);
+console.log(nestedArray.reverse()); // reverse array items
+console.log(nestedArray);
+console.log(nestedArray.indexOf("b")); // find index of an item in array
+console.log(nestedArray);
+console.log(nestedArray.includes("c")); // check if an item exists in array
+console.log(nestedArray.push("i")); // add item to end of array
+console.log(nestedArray);
+console.log(nestedArray.pop()); // remove item from end of array
+console.log(nestedArray);
+console.log(nestedArray.shift()); // remove item from start of array
+console.log(nestedArray);
+
+// OBJECTS
