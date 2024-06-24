@@ -115,3 +115,19 @@ switch (workingDays) {
     console.log('Not a valid day');
     break;
 }
+
+// for loop
+// for (initialExpression; condition; iteration) {}
+for (let i = 0; i < 5; i++) {
+  console.log('-- outer --', '*');
+  for (let j = 0; j < 5; j++) {
+    console.log('-- inner --', j);
+  }
+}
+
+// while loop
+let i = 0; // initial iteration
+while (i <= 5) { // condition
+  console.log(i);
+  i++; // increment
+}
