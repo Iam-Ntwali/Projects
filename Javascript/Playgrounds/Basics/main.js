@@ -18,18 +18,6 @@ console.log(add(2, 3));
 let students = ['Eric', 'John', 'Smith', 'Jackson'];
 console.log(students);
 
-// objects
-let person = {
-  name: 'Ntwali',
-  age: 25,
-  hobbies: ['music', 'sports', 'reading'],
-  address: {
-    street: '123 Main St',
-    city: 'Boston',
-    state: 'MA'
-  }
-};
-
 for (data in students) {
   if (students[data] !== 'Eric') {
     console.log(`student ${Number(data) + 1} is ${students[data]}`);
@@ -188,3 +176,14 @@ console.log(nestedArray.shift()); // remove item from start of array
 console.log(nestedArray);
 
 // OBJECTS
+const person = {
+  name: 'Ntwali',
+  age: 25,
+  hobbies: ['music', 'sports', 'reading'],
+  address: {
+    street: '123 Main St',
+    city: 'Boston',
+    state: 'MA'
+  }
+};
+console.log(person);
