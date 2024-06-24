@@ -163,3 +163,14 @@ console.log(!c); // false
 console.log(!d); // true
 
 // TERNARY OPERATOR
+
+
+// ARRAYS
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(numbers); //
+console.log(numbers.length); // array length
+console.log(numbers[0]); // accessing item in array using index
+console.log(numbers[numbers.length - 1]); // accessing last item in array
+
+const nestedArray = ["a", "b", ["c", "d", "e", "f"], "g", "h"];
+console.log(nestedArray);
