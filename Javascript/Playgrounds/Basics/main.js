@@ -131,3 +131,35 @@ while (i <= 5) { // condition
   console.log(i);
   i++; // increment
 }
+
+//do while loop
+let k = 0;
+do {
+  console.log(k);
+  k++;
+} while (k <= 5);
+
+// LOGICAL OPERATOR
+const a = true;
+const b = false;
+const c = true;
+const d = false;
+// 1. -> && and operator ==> Always eveluate to false unless both operands are true
+console.log(a && b); // false
+console.log(a && c); // true
+console.log(b && c); // false
+console.log(b && d); // false
+
+// 2. -> || or operator ==> Always eveluate to true unless as long as one operand is true
+console.log(a || b); // true
+console.log(a || c); // true
+console.log(b || c); // true
+console.log(b || d); // false
+
+// 3. -> ! Logical Not operator ==> Reverse the operand value boolean
+console.log(!a); // false
+console.log(!b); // true
+console.log(!c); // false
+console.log(!d); // true
+
+// TERNARY OPERATOR
