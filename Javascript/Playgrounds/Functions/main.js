@@ -58,4 +58,22 @@ adminAccess(loggedInUser, checkRoleFn = (usrRole) => {
   }
 })
 
+// JSON (JavaScript Object Notation)
+const course = {
+  title: 'The Complete JavaScript Course',
+  rating: 4.5,
+  students: 30123,
+  price: 190,
+  isFree: true,
+}
+// stringfy JSON
+const courseJSON = JSON.stringify(course);
+console.log(courseJSON);
 
+// parse JSON
+const courseObj = JSON.parse(courseJSON);
+console.log(courseObj);
+console.log(courseObj.title);
+console.log(courseObj.rating);
+console.log(courseObj.students);
+console.log(courseObj.price);
