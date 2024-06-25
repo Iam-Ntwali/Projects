@@ -73,7 +73,42 @@ console.log(courseJSON);
 // parse JSON
 const courseObj = JSON.parse(courseJSON);
 console.log(courseObj);
-console.log(courseObj.title);
-console.log(courseObj.rating);
-console.log(courseObj.students);
-console.log(courseObj.price);
+// console.log(courseObj.title);
+// console.log(courseObj.rating);
+// console.log(courseObj.students);
+// console.log(courseObj.price);
+console.log('=== ===');
+// DATES in JavaScript
+const now = new Date();
+console.log(now);
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getFullYear());
+console.log(now.toDateString().split(' '))
+console.log(now.toISOString());
+console.log(now.toLocaleString());
+console.log('=== ===')
+// TIMEOUTS
+setTimeout(() => {
+  console.log('Hello');
+}, 1000);
+
+// INTERVALS
+function count() {
+  let count = 0;
+  for (let i = 5; i > 0; i--) {
+    count -= i;
+  }
+  return count;
+};
+const countDown = setInterval(() => {
+  console.log(count());
+}, 1000);
+
+// clear interval
+setTimeout(() => {
+  clearInterval(countDown);
+  console.log('Stopped interval')
+}, 5000);
+console.log('=== ===')
