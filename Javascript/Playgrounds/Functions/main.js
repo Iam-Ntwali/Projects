@@ -36,19 +36,19 @@ const loggedInUser = 'Nicole';
 
 const adminAccess = (user, checkRoleFn) => {
   if (adminUsers.includes(user)) {
-    usrRole = 'admin';
-    checkRoleFn();
+    const usrRole = 'admin';
+    checkRoleFn(usrRole);
     console.log('Welcome to the Dashboard', user);
   } else if (!adminUsers.includes(user) && normalUsers.includes(user)) {
-    usrRole = 'user';
-    checkRoleFn();
+    const usrRole = 'user';
+    checkRoleFn(usrRole);
     console.log('You are not an admin');
   } else {
     console.log('User not found');
   }
 }
 
-adminAccess(loggedInUser, function checkRoleFn() {
+adminAccess(loggedInUser, checkRoleFn = (usrRole) => {
   if (usrRole === 'admin') {
     console.log('Access granted');
     return usrRole;
@@ -57,3 +57,5 @@ adminAccess(loggedInUser, function checkRoleFn() {
     return usrRole;
   }
 })
+
+
