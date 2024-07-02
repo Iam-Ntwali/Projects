@@ -20,7 +20,6 @@ function hideLoader() {
 
 // Show New Quote
 const showQuote = () => {
-  showLoader();
   const randomIndex = Math.floor(Math.random() * quotesData.length);
   const quote = quotesData[randomIndex];
 
@@ -28,7 +27,6 @@ const showQuote = () => {
   quote.text.length > 50 ? quoteText.classList.add('long-quote') : quoteText.classList.remove('long-quote');
 
 
-  hideLoader()
 
   quoteText.textContent = quote.text;
   authorText.textContent = ` ${quote.author}`;
