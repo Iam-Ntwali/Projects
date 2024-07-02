@@ -42,7 +42,7 @@ body {
 }
 
 .quote-author {
-  margin-top: 15px;
+  margin-top: 20px;
   font-size: 1.5rem;
   font-weight: 400;
   font-family: 'DankMono Italic', sans-serif;
@@ -109,6 +109,11 @@ button:active {
 
 .twiter-btn:hover .tooltip {
   visibility: visible;
+}
+
+.get-btn {
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 /* Media Query: Tablet or Smaller */
