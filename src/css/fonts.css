@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Operator Mono';
+  src: url(../../assets/Fonts/OperatorMono/OperatorMonoLig-Book.otf);
+}
+
+@font-face {
+  font-family: 'Operator Mono Light';
+  src: url(../../assets/Fonts/OperatorMono/OperatorMonoLig-Light.otf);
+  font-weight: 100;
+}
