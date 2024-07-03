@@ -60,7 +60,7 @@ img {
 }
 
 .hero {
-  min-height: 60vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,7 +131,7 @@ img {
 
 .project__card-btn:hover {
   background-color: crimson;
-  color: #9ca3af;
+  color: #0f172a;
 }
 
 .footer {
