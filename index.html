@@ -12,39 +12,95 @@
     <title>My Projects</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./src/main.css" />
+    <link rel="stylesheet" href="./src/css/fonts.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
   </head>
 
   <body>
-    <main>
+    <main class="container">
       <section class="hero">
-        <h1>Hello 👋!</h1>
-        <h2>Welcome to my projects page</h2>
+        <h2 class="hero__title">Hello 👋!</h2>
+        <h1 class="hero__subtitle">Welcome to my projects page</h1>
       </section>
-
-      <section class="projects">
-        <div class="card">
+      <section class="projects section">
+        <!-- Project container -->
+        <div class="project__card">
+          <!-- preview -->
           <img
-            src="./Assets/previews/Weather.png"
+            src="./assets/previews/Quote Generator.png"
             alt="preview png"
-            class="preview"
+            class="project__card-img"
           />
-          <a href="./proj/Weather-App/weather.html">Weather App ⛈️🌦️</a>
+          <!-- Title -->
+          <div class="project__card-name">Quote Generator</div>
+          <!-- Links -->
+          <div class="project__card-links">
+            <a href="./quote-generator/page.html" class="project__card-btn btn"
+              >Live Site</a
+            >
+            <a
+              href="./proj/Weather-App/weather.html"
+              class="project__card-btn btn"
+              >Source Code</a
+            >
+          </div>
         </div>
-        <div class="card">
+        <div class="project__card">
+          <!-- preview -->
           <img
-            src="./Assets/previews/Calcutor.png"
+            src="./assets/previews/Weather.png"
             alt="preview png"
-            class="preview"
+            class="project__card-img"
           />
-          <a href="./proj/calculator/calculator.html">Calculator</a>
+          <!-- Title -->
+          <div class="project__card-name">Weather App ⛈️🌦️</div>
+          <!-- Links -->
+          <div class="project__card-links">
+            <a
+              href="./proj/Weather-App/weather.html"
+              class="project__card-btn btn"
+              >Live Site</a
+            >
+            <a
+              href="./proj/Weather-App/weather.html"
+              class="project__card-btn btn"
+              >Source Code</a
+            >
+          </div>
+        </div>
+        <div class="project__card">
+          <!-- preview -->
+          <img
+            src="./assets/previews/Weather.png"
+            alt="preview png"
+            class="project__card-img"
+          />
+          <!-- Title -->
+          <div class="project__card-name">Weather App ⛈️🌦️</div>
+          <!-- Links -->
+          <div class="project__card-links">
+            <a
+              href="./proj/Weather-App/weather.html"
+              class="project__card-btn btn"
+              >Live Site</a
+            >
+            <a
+              href="./proj/Weather-App/weather.html"
+              class="project__card-btn btn"
+              >Source Code</a
+            >
+          </div>
         </div>
       </section>
     </main>
-    <footer>
-      <p style="text-align: center">
+    <footer class="footer section">
+      <p>
         Made with 💗 by <a href="https://github.com/Iam-Ntwali">Ntwali 🇷🇼</a>
       </p>
+      <p>&copy; <span id="year"></span>. All right reserved</p>
     </footer>
+
+    <!-- scripts -->
+    <script src="./src/js/getYear.js"></script>
   </body>
 </html>
