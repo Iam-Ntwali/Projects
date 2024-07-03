@@ -8,6 +8,7 @@ body {
   font-family: 'Operator Mono', sans-serif;
   background-color: #0f172a;
   color: #9ca3af;
+  position: relative;
 }
 
 a {
@@ -50,6 +51,22 @@ img {
 
 .section {
   margin-top: 3rem;
+}
+
+/* Reusable across pages */
+.fixed {
+  background: whitesmoke;
+
+  position: fixed;
+  width: 100%;
+}
+
+.fixed__top {
+  top: 0;
+}
+
+.fixed__bottom {
+  bottom: 0;
 }
 
 /* --- classes --- */
