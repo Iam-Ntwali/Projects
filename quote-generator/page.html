@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="../src/css/fonts.css" />
   </head>
   <body>
-    <div class="quote-container" id="quote-container">
+    <nav>
+      <button>
+        <a href="../index.html">🔙 Go to Homepage</a>
+      </button>
+    </nav>
+    <main class="quote-container" id="quote-container">
       <!-- Quote -->
       <div class="quoteContents">
         <div class="quote-text">
@@ -32,10 +37,18 @@
         </button>
         <button class="get-btn" id="getQuote"">New Quote</button>
       </div>
-    </div>
+    </main>
+
+
+     <!-- Footer -->
+      <footer>
+        <p>&copy;
+          <span id="year"></span> Quote Generator</p>
+      </footer>
 
     <!-- <div class="loader" id="loader"></div> -->
     <!-- JS -->
+     <script src="../src/js/getYear.js"></script>
     <script src="./data.js"></script>
     <script src="./script.js"></script>
     <!-- <script src="./api-script.js"></script> -->
