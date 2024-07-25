@@ -34,6 +34,11 @@ a {
   text-decoration: none;
 }
 
+ul,
+li {
+  list-style: none;
+}
+
 .btn {
   margin-left: 40px;
   background: #fff;
@@ -61,7 +66,7 @@ a {
 /* Navbar */
 header {
   background-color: #1f4a40;
-
+  position: relative;
 }
 
 #navbar {
@@ -70,6 +75,7 @@ header {
   align-items: center;
   height: 80px;
   position: relative;
+
 }
 
 .logo {
@@ -109,13 +115,63 @@ header {
   display: none;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 /* Media Queries */
-@media screen and (max-width: 699px) {
+@media (max-width: 699px) {
+
+  /* hide big screen menu */
   #menu {
-    display: block;
-    width: 280px;
-    height: auto;
-    position: absolute;
-    top: 80px;
+    display: none;
   }
+
+  .menubar {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  /* show mobile menu */
+  .mobile-menu {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    text-align: center;
+    width: 280px;
+    padding: 30px 0;
+    height: auto;
+    top: 80px;
+    right: 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, .2);
+    border-radius: .8rem;
+    opacity: 0;
+    transition: all .3s ease;
+  }
+
+  .mobile-menu.active {
+    /* right: 10px; */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 1rem;
+  }
+
+  .mobile-menu li a {
+    color: #1f4a40;
+    margin-left: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .w-btn {
+    background: #1f4a40;
+    color: #fff;
+    margin-left: 0;
+  }
+
+
 }
