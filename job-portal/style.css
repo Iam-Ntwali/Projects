@@ -119,6 +119,11 @@ header {
   display: none;
 }
 
+/* Hero section */
+#hero {
+  z-index: -2;
+}
+
 /* Media Queries */
 @media (max-width: 699px) {
 
@@ -148,6 +153,7 @@ header {
     border-radius: .8rem;
     opacity: 0;
     transition: all .3s ease;
+    background: #fff;
   }
 
   .mobile-menu.active {
