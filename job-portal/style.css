@@ -23,19 +23,99 @@ h2 {
   font-weight: 600;
   line-height: 60px;
 }
+
 h3 {
   font-size: 1.2rem;
   padding-bottom: 1rem;
   font-weight: 500;
 }
 
+a {
+  text-decoration: none;
+}
+
+.btn {
+  margin-left: 40px;
+  background: #fff;
+  color: #1f4a40;
+  padding: 9px 30px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: none;
+}
+
 .sec-space {
   padding: 4rem 0;
 }
+
 .extra-space {
   padding-top: 8rem;
 }
+
 .obj-width {
   max-width: 1200px;
   margin: auto;
+}
+
+/* Navbar */
+header {
+  background-color: #1f4a40;
+
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  position: relative;
+}
+
+.logo {
+  width: 120px;
+}
+
+.logo a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.logo a>span {
+  background-color: #fff;
+  color: #1f4a40;
+  border-radius: 5px;
+  padding: 0 .5rem;
+  margin-right: .1rem;
+}
+
+#menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+#menu li a {
+  color: #fff;
+  margin-left: 40px;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.menubar {
+  color: #fff;
+  display: none;
+}
+
+/* Media Queries */
+@media screen and (max-width: 699px) {
+  #menu {
+    display: block;
+    width: 280px;
+    height: auto;
+    position: absolute;
+    top: 80px;
+  }
 }
