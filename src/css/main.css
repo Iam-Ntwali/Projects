@@ -157,15 +157,16 @@ img {
   .section {
     margin-top: 5rem;
   }
+}
 
-  @media (min-width: 1024px) {
-    .container {
-      max-width: 1024px;
-    }
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
   }
+}
 
-  @media (min-width: 1536px) {
-    .container {
-      max-width: 1536px;
-    }
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
+}
