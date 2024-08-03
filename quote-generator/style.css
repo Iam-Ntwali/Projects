@@ -151,6 +151,9 @@ footer {
   color: #eeebf3;
   width: 100%;
   padding: 1rem 2rem;
+  position: fixed;
+  bottom: 0;
+
 }
 
 
